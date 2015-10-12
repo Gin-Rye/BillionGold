@@ -7,9 +7,7 @@
     <artifactId>BillionGold</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.billiongold</groupId>
   <artifactId>BillionGold-web</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>BillionGold-web Maven Webapp</name>
   <url>http://maven.apache.org</url>
