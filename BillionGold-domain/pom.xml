@@ -7,16 +7,4 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>BillionGold-domain</artifactId>
-	<dependencies>
-		<dependency>
-			<groupId>com.billiongold</groupId>
-			<artifactId>BillionGold-base</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.billiongold</groupId>
-			<artifactId>BillionGold-util</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
 </project>

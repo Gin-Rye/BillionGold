@@ -8,8 +8,6 @@
 	<modules>
 		<module>BillionGold-domain</module>
 		<module>BillionGold-business</module>
-		<module>BillionGold-util</module>
-		<module>BillionGold-base</module>
 		<module>BillionGold-web</module>
 	</modules>
 	<properties>
