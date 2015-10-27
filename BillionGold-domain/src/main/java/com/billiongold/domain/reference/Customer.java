@@ -2,27 +2,30 @@ package com.billiongold.domain.reference;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "ref_customer")
+@Table(name = "bg_ref_customer")
 public class Customer {
 	
 	@Id
 	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@ManyToOne
-	@JoinColumn(name = "type_id")
+	@Enumerated(EnumType.STRING)
+	@Column(name = "customer_type", nullable = false)
 	private CustomerType customerType;
 	
-	@Column(name = "code")
+	@Column(name = "code", nullable = false)
 	private String code;
 	
-	@Column(name = "name")
+	@Column(name = "name", nullable = false)
 	private String name;
 	
 	@Column(name = "address")

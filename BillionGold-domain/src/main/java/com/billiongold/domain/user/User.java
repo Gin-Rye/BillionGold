@@ -1,4 +1,4 @@
-package com.billiongold.domain.reference;
+package com.billiongold.domain.user;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,22 +8,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "bg_ref_product")
-public class Product {
-	
+@Table(name = "bg_usr_user")
+public class User {
 	@Id
 	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
-	@Column(name = "code", nullable = false)
-	private String code;
-	
+
 	@Column(name = "name", nullable = false)
 	private String name;
-	
-	@Column(name = "specification")
-	private String specification;
+
+	@Column(name = "password")
+	private String password;
 
 	public int getId() {
 		return id;
@@ -31,14 +27,6 @@ public class Product {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public String getCode() {
-		return code;
-	}
-
-	public void setCode(String code) {
-		this.code = code;
 	}
 
 	public String getName() {
@@ -49,11 +37,11 @@ public class Product {
 		this.name = name;
 	}
 
-	public String getSpecification() {
-		return specification;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setSpecification(String specification) {
-		this.specification = specification;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }

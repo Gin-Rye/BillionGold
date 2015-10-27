@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dataset>
-	<ref_customer_type id="1" name="供货商" specification="产品供应商" />
-	<ref_customer_type id="2" name="采购商" specification="产品采购商" />
-</dataset>

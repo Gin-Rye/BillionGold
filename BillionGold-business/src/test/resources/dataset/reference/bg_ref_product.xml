@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<bg_ref_product id="1" code="TP1" name="测试产品1" specification="说明1" />
+	<bg_ref_product id="2" code="TP2" name="测试产品2" specification="说明2" />
+</dataset>

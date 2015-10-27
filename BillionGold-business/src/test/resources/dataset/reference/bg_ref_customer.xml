@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<bg_ref_customer id="1" customer_type="SUPPLIER" code="TS1" name="测试供货商1" address="购货商地址1" telephone="010-11111111" fax="010-11111111" email="TS1@ts1.com" website="http://www.ts1.com" />
+	<bg_ref_customer id="2" customer_type="PURCHASER" code="TP1" name="测试采购商1" address="采购商地址1" telephone="020-11111111" fax="020-11111111" email="TP1@tp1.com" website="http://www.tp1.com" />
+</dataset>
