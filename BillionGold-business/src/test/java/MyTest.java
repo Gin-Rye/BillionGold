@@ -63,7 +63,6 @@ public class MyTest extends BaseH2DBTest {
 		org.junit.Assert.assertTrue(r != null);
 	}
 	
-	@Test
 	public void test() {
 		UserService userService = ComponentContext.getInstance(UserService.class);
 		System.out.println(userService);
