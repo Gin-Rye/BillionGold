@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import com.billiongold.business.dao.reference.ProductDao;
 import com.billiongold.domain.reference.Product;
 
-@Service
+@Service("productService")
 public class ProductService {
 	
 	@Autowired

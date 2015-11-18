@@ -6,14 +6,16 @@ import com.billiongold.business.dao.reference.ProductDao;
 import com.billiongold.business.dao.user.GroupDao;
 import com.billiongold.business.dao.user.RelationUserGroupDao;
 import com.billiongold.business.dao.user.UserDao;
+import com.billiongold.business.service.user.UserService;
 import com.billiongold.domain.reference.Product;
 import com.billiongold.domain.user.Group;
 import com.billiongold.domain.user.RelationUserGroup;
 import com.billiongold.domain.user.User;
-import com.ginrye.baseframework.java.test.BaseDBTest;
+import com.ginrye.baseframework.java.base.ComponentContext;
+import com.ginrye.baseframework.java.test.BaseH2DBTest;
 
 @ContextConfiguration("classpath:applicationContext.xml")
-public class MyTest extends BaseDBTest {
+public class MyTest extends BaseH2DBTest {
 	
 	@Autowired
 	private ProductDao productDao;
@@ -59,5 +61,11 @@ public class MyTest extends BaseDBTest {
 	public void testRelationUserGroup() {
 		RelationUserGroup r = relationUserGroupDao.findById(1);
 		org.junit.Assert.assertTrue(r != null);
+	}
+	
+	@Test
+	public void test() {
+		UserService userService = ComponentContext.getInstance(UserService.class);
+		System.out.println(userService);
 	}
 }

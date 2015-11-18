@@ -9,10 +9,10 @@ import org.springframework.test.context.ContextConfiguration;
 
 import com.billiongold.domain.reference.Customer;
 import com.billiongold.domain.reference.CustomerType;
-import com.ginrye.baseframework.java.test.BaseDBTest;
+import com.ginrye.baseframework.java.test.BaseH2DBTest;
 
 @ContextConfiguration("classpath:applicationContext.xml")
-public class CustomerServiceTest extends BaseDBTest {
+public class CustomerServiceTest extends BaseH2DBTest {
 	
 	@Autowired
 	@Qualifier("customerService")
